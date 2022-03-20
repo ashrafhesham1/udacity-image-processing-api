@@ -20,7 +20,7 @@ to resize an image with the API follow the following instructions :
  - then combine it with the subdomain` /api/images` 
  ex:
  
- [`http://localhost:3000/api/images?filename=fjord&width=500&heixght=500`](%60http://localhost:3000/api/images?filename=fjord&width=500&heixght=500%60)
+ [`http://localhost:3000/api/images?filename=fjord&width=500&height=500`](%60http://localhost:3000/api/images?filename=fjord&width=500&height=500%60)
  
 
  - you can now find your new image on the path `/images/thumb`
