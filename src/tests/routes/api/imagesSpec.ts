@@ -83,7 +83,7 @@ describe('Respone to image processing requests', () => {
       });
   });
 
-  it('Checks if resizing works corectly', (done) => {
+  it('Checks if resizing requests work corectly', (done) => {
     const [filename, width, height] = ['fjord', 3, 1];
 
     req

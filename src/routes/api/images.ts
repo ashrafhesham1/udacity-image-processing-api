@@ -1,11 +1,11 @@
-import express from 'express';
+import { Router, Request, Response } from 'express';
 import path from 'path';
 import resizeImg from '../../utilities/resizer';
 import { isImgExist, generateImgData } from '../../utilities/fileSys';
 
-const route = express.Router();
+const route = Router();
 
-route.get('/', async (req, res): Promise<void> => {
+route.get('/', async (req: Request, res: Response): Promise<void> => {
   const width = Number(req.query.width);
   const height = Number(req.query.height);
   const fileName = req.query.filename as unknown as string;
@@ -51,7 +51,7 @@ route.get('/', async (req, res): Promise<void> => {
   );
 });
 
-route.get('/:sub', (req, res) => {
+route.get('/:sub', (req: Request, res: Response): void => {
   res.send(`this sub domin doesn't exist `);
 });
 
